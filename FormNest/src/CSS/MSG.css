@@ -1,0 +1,21 @@
+@import url('../Resources/tools/RobotoFont.css');
+.mshold{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 100vw;
+}
+.mshold #msg{
+    padding: 15px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: fit-content;
+    color: rgb(36, 36, 36);
+    font-family: rob-bld;
+}
+.mshold #msg i{
+    color: blue;
+    margin-right: 10px;
+}

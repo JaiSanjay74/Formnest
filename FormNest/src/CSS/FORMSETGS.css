@@ -1,0 +1,79 @@
+@import url('../Resources/tools/RobotoFont.css');
+
+.set{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 30px;
+    align-items: center;
+}
+.set section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 15px;
+}
+.set section b{
+    font-size: 1.10rem;
+    color: rgb(53, 53, 53);
+    font-family: rob-lt;
+}
+.set section label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(220, 220, 220);
+    cursor: pointer;
+}
+.set label:hover{
+    border-color: blue;
+}
+.set #vis{
+    visibility: hidden;
+}
+.set #vis:checked + label i{
+    display: flex;
+}
+.set #vis:checked + label {
+   border-color: rgb(0, 213, 107);
+}
+
+.set section label i{
+    font-size: 1.50rem;
+    height: inherit;
+    width: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(0, 213, 107);
+}
+
+/*--nm of allow--*/
+.set section #nm{
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 10px;
+    width: 50px;
+    outline: none;
+    font-size: 1.10rem;
+    font-family: rob-bld;
+    color: rgb(37, 40, 197);
+    padding: 10px;
+}
+
+@media (orientation:landscape){
+    .set{
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .set section b{
+       font-size: 0.90rem;
+    }
+    .set section #nm{
+        font-size: 0.90rem;
+     }
+}

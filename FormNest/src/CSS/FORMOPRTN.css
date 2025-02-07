@@ -1,0 +1,30 @@
+@import url('../Resources/tools/RobotoFont.css');
+
+.oph{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.oph section{
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.30rem ;
+    color: rgb(79, 79, 79);
+    margin-top: 15px;
+    transition: 0.5s background-color,0.5s color;
+}
+.oph section:hover{
+    background-color: rgb(241, 241, 241);
+    color: rgb(41, 41, 255);
+}
+.oph section b{
+    font-family: rob-lt;
+    margin-left: 15px;
+}
+
+@media(orientation:landscape){
+    .oph section{
+        font-size: 1rem;
+    }
+}

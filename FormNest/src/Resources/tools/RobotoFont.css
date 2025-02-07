@@ -1,0 +1,13 @@
+@font-face{
+    src: url('./Roboto/Roboto-Bold.ttf');
+    font-family: rob-bld;
+}
+
+@font-face{
+    src: url('./Roboto/Roboto-Light.ttf');
+    font-family: rob-lt;
+}
+@font-face{
+    src: url('./Roboto/Roboto-Medium.ttf');
+    font-family: rob-md;
+}

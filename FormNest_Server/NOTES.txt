@@ -1,0 +1,27 @@
+To start the Nodejs FormNest Server, 
+
+Type "ssh -i .ssh/serveo_key -R formnest.serveo.net:80:localhost:7000 serveo.net" in command prompt.
+
+Then we access through,
+
+https://formnest.serveo.net/
+
+
+To setup Serveo SSH tunnel,
+
+1. make .shh folder in users/[user_id]/
+2. and enter cmd "ssh-keygen -t ed25519 -f .ssh/serveo_key" in cmd prompt.
+
+    * .ssh - created folder called ".shh" (name must be '.shh').
+    * serveo_key - it file type is "File" (not txt file and name can be any).
+      And this must given in inside '.shh' folder.
+      And we dont need to create maually this. above command create this file with keygen text.
+      We only create '.shh' folder in 'users/[user_id]' folder.
+3. Then we enter this command "ssh -R thyform.serveo.net:80:localhost:7000 serveo.net"
+   But now display one warning that tells to that need to verify our google account or github account.
+   So, they give two Links. here we have google account,So we ctrl + click google account. 
+   then serveo verify our google account by we selecting google account. then in browser show one message
+   that is "serveo successfully verified [our_google_account] successfully.
+4. Then re-try then enter above (first part) url to start thyforms server.
+
+Here we can modify name in the place of ports area,before ports area and place of keygen file  for future modification(first part).

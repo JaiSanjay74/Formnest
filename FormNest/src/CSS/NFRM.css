@@ -1,0 +1,93 @@
+@import url('../Resources/tools/RobotoFont.css');
+
+.nfrmm{
+    display: flex;
+    flex-direction: column;
+}
+.nfrmm .fnm{
+    font-size: 1.30rem;
+    color: rgb(34, 34, 34);
+    font-family: rob-bld;
+    margin: 15px 0px 15px 0px;
+}
+
+.nfrmm .fnm + input[type="text"]{
+    border: none;
+    outline: none;
+    background-color: rgba(208, 208, 208, 0.658);
+    padding: 13px;
+    border-radius: 10px;
+    font-family: rob-bld;
+    font-size: 1.10rem;
+    color: rgb(11, 46, 187);
+}
+.nfrmm .fnm + input[type="text"]:focus{
+    background-color: rgb(232, 232, 232);
+}
+.nfrmm .fnm + input[type="text"]::placeholder{
+    color: rgb(155, 155, 155);
+}
+/* add field*/
+.nfrmm button{
+    background-color: white;
+    border: none;
+    font-family: rob-bld;
+    font-size: 1.10rem;
+    color: blue;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  0.5s background-color;
+    width: fit-content;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.nfrmm button:hover{
+    background-color: rgba(0, 249, 124, 0.849);
+}
+.nfrmm .fld{
+    margin-top: 15px;
+}
+.nfrmm .fld b{
+   color: white;
+   font-size: 0.90rem;
+   font-family: rob-bld;
+   padding: 7px;
+   outline: none;
+   border: 2.20px solid transparent;
+   border-radius: 5px;
+   margin-right: 5px;
+   margin-top: 5px;
+   display: inline-block;
+   background-color: rgb(230, 0, 76);
+}
+.nfrmm .fld b:focus-within{
+    border-color: rgb(38, 0, 255);
+    background-color: whitesmoke;
+    color: green;
+}
+.nfrmm .fld j{
+    outline: none;
+}
+.nfrmm .fld b i{
+    margin-left: 10px;
+}
+
+/* creat form*/
+.nfrmm #sub{
+    background-color: rgb(64, 21, 255);
+    border: none;
+    font-family: rob-bld;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  0.5s background-color;
+    width: fit-content;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.nfrmm #sub:hover{
+    background-color: rgba(0, 159, 64, 0.933);
+}

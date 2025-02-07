@@ -1,0 +1,148 @@
+@import url('../Resources/tools/RobotoFont.css'); 
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.forms .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forms .head section i{
+    font-size: 1.80rem;
+    color: rgb(73, 73, 73);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.5s color;
+}
+.forms .head section i:hover{
+    color: rgb(255, 0, 76);
+}
+.forms .head section b{
+    font-family: rob-bld;
+    font-size: 1.80rem;
+    color: rgb(56, 56, 56);
+}
+.forms .head a{
+    display: block;
+    font-family: rob-bld;
+    font-size: 1.30rem;
+    color: white;
+    background-color: rgb(6, 21, 232);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: 0.5s background-color,0.5s color;
+}
+.forms .head a:hover{
+    background-color: rgb(255, 251, 0);
+    color: black;
+}
+.forms .head .fa-trash{
+    font-size: 1.40rem;
+    color: rgb(56, 56, 56);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s background-color,0.5s color;
+}
+.forms .head .fa-trash:hover{
+    color: white;
+    background-color: red;
+}
+/*--formlist--*/
+.formtbl {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 34.4px);
+    overflow-y: auto;
+}
+.formtbl::-webkit-scrollbar{
+    width: 3px;
+}
+.formtbl::-webkit-scrollbar-track{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(219, 219, 219);
+}
+.formtbl::-webkit-scrollbar-thumb{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(194, 194, 194);
+}
+.formtbl .titl,.formtbl .fdth{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.formtbl .fdth i{
+    width: 20%;
+    margin-right: 15px;
+   }
+   .formtbl .fdth fdt{
+       color: rgb(45, 45, 45) !important;
+       font-size: 1.05rem !important;
+       cursor: pointer;
+   }
+   .formtbl .fdth{
+       border-radius: 10px;
+       margin-top: 10px;
+       transition: 0.5s background-color;
+   }
+.formtbl .fdth .fa-link:hover{
+    cursor: pointer;
+    color: crimson;
+}
+   .formtbl .fdth:hover{
+       background-color: rgba(136, 174, 255, 0.451);
+   }
+   /*long-press*/
+   .formtbl .fdthsel{
+    background-color: rgb(0, 229, 255);
+   }
+   .formtbl .fdth:hover > fdt:nth-child(1){
+    color: rgb(22, 62, 218) !important;
+}
+.formtbl .titl fdct,.formtbl .fdth fdt{
+    width: 20%;
+    margin-right: 15px;
+    font-family: rob-bld;
+    color: rgba(109, 109, 109, 0.942);
+    font-size: 1.20rem;
+}
+
+/* msg when no forms */
+.formtbl b{
+    font-family: rob-lt;
+    color: rgb(165, 165, 165);
+    font-size: 0.90rem;
+    text-align: center;
+    margin-top: 15px;
+}
+@media(max-width:740px){
+    .forms .head a{
+        font-size: 1rem;
+    }
+    .formtbl .titl fdct{
+        font-size: 0.73rem !important;
+    }
+    .formtbl .fdth #fdi,.formtbl .fdth i{
+        font-size: 0.70rem !important;
+    }
+    .forms .head section b, .forms .head section:nth-child(1) i{
+        font-size: 1.20rem;
+    }
+    .formtbl .titl{
+        padding-bottom: 3px;
+    }
+}

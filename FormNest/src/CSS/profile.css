@@ -1,0 +1,119 @@
+@import url('../Resources/tools/RobotoFont.css');
+
+.prof{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prof b,.prof section{
+    width: 80%;
+}
+.prof b{
+    font-size: 1.30rem;
+    font-family: rob-bld;
+    color: rgb(71, 71, 71);
+    margin: 35px 0px 15px 0px;
+}
+.prof .cred{
+    display: flex;
+    flex-direction: column;
+}
+.prof .cred b{
+    font-size: 1rem;
+    font-family: rob-bld;
+    color: rgb(57, 57, 57);
+    margin: 15px 0px 15px 0px;
+}
+.prof .cred input{
+    border: 1.8px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: rgb(227, 227, 227);
+    color: rgb(5, 108, 205);
+    font-family: rob-bld;
+    font-size: 1.10rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+.prof .cred input:focus{
+    background-color: white;
+    border-color: rgb(0, 85, 255);
+}
+.prof .opts{
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.prof .opts b{
+    font-size: 1rem;
+    width: fit-content;
+    font-family: rob-bld;
+    border-radius: 7px;
+    margin: 15px 15px 0px 0px;
+}
+.prof .opts b:nth-child(1){
+    color: rgb(2, 124, 51);
+    cursor: pointer;
+}
+.prof .opts b:nth-child(1):hover{
+    color: rgb(0, 10, 126);
+}
+.prof .opts b:nth-child(2){
+    color: rgb(237, 13, 32);
+    cursor: pointer;
+}
+.prof .opts b:nth-child(2):hover{
+    color: rgb(25, 18, 117);
+}
+.prof .opts b:nth-child(3){
+    color: rgb(255, 255, 255);
+    background-color: rgba(38, 55, 248, 0.866);
+    padding: 13px;
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+.prof .opts b:nth-child(3):hover{
+    background-color: white;
+    color: rgb(0, 85, 255);
+}
+
+/**---for delete account warning --**/
+.prof .dela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prof .dela i{
+    font-size: 4rem;
+    color: red;
+    margin: 50px 0px 50px 0px;
+}
+.prof .dela p{
+    font-family: rob-bld;
+    width: 90%;
+    color: blue;
+    font-size: 1.17rem;
+    margin: 40px 0px 40px 0px;
+    text-align: center;
+}
+.prof  .dela .fa-trash{
+    color: white;
+    font-size: 1rem;
+    margin-right: 10px !important;
+    margin: 0px;
+}
+.prof .dela button{
+    margin-top: 15px;
+    border: 0px;
+    background-color: rgb(234, 0, 0);
+    color: white;
+    font-family: rob-bld;
+    font-size: 1.10rem;
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.prof .dela button:hover{
+    background-color: rgb(5, 1, 133);
+}

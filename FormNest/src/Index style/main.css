@@ -1,0 +1,12 @@
+body{
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top left,rgb(66, 66, 255),rgb(255, 31, 68));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+

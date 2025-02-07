@@ -1,0 +1,57 @@
+@import url('../Resources/tools/RobotoFont.css');
+
+.vst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.vst  section,.vst vstr{
+    margin-top: 15px;
+    display: flex;
+    width: 90%;
+    border-radius: 10px;
+}
+.vst section b{
+    font-size: 1.20rem;
+    font-family: rob-bld;
+    color: rgb(122, 122, 122);
+    width: 40%;
+    padding: 10px;
+}
+.vst vstr{
+    margin-top: 10px;
+}
+.vst vstr b{
+    font-size: 1rem;
+    font-family: rob-bld;
+    color: rgb(71, 71, 71);
+    width: 40%;
+    padding: 10px;
+}
+.vst vstr:hover{
+    cursor: pointer;
+    background-color: rgba(46, 153, 253, 0.352);
+}
+.vst vstr:hover > b:nth-child(1){
+    cursor: pointer;
+    color: blue;
+}
+/* msg when no viewers */
+.vst section + b{
+    font-family: rob-lt;
+    color: rgb(165, 165, 165);
+    font-size: 0.90rem;
+    text-align: center;
+    margin-top: 15px;
+}
+@media(orientation:landscape){
+    .vst section b{
+        font-size: 0.90rem;
+    }
+    .vst vstr{
+        margin-top: 3px;
+    }
+    .vst vstr b{
+        font-size: 0.85rem;
+    }
+}

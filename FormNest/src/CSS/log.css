@@ -1,0 +1,85 @@
+@import url('../Resources/tools/RobotoFont.css');
+
+.log{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.log b:nth-of-type(1){
+    font-family: rob-bld;
+    font-size: 1.35rem;
+    color: rgb(42, 42, 42);
+    margin: 25px;
+}
+.log input[type="email"] ,.log input[type="password"],.log input[type="text"]{
+
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 80%;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-color: rgba(237, 237, 237, 0.718);
+    color: rgb(71, 71, 71);
+    font-size: 1.10rem;
+}
+.log input[type="email"]::placeholder ,.log input[type="password"]::placeholder,
+.log input[type="text"]::placeholder{
+    color: rgb(111, 111, 111);
+}
+.log b:nth-of-type(2){
+    width: calc(80% + 30px);
+    margin: 25px 0px 25px 0px;
+    text-align: right;
+    font-family: rob-lt;
+    color: rgb(5, 48, 205);
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: 0.5s color;
+}
+.log b:nth-of-type(2):hover{
+    color: rgb(0, 209, 38);
+}
+input[type="button"]{
+    border: none;
+    box-sizing: content-box;
+    background-color: rgb(33, 59, 208);
+    color: white;
+    font-family: rob-bld;
+    font-size: 1.15rem;
+    padding: 15px;
+    margin-top: 15px;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.5s background-color;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    background-color: rgb(0, 94, 255);
+}
+.log p{
+    margin-top: 35px;
+    font-family:rob-bld;
+    color: rgb(45, 45, 45);
+    font-size: 1.10rem;
+    letter-spacing: 1px;
+    width: 80%;
+    text-align: center; 
+}
+.log p span{
+    color: rgb(253, 0, 47);
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px;
+    transition: 0.5s text-decoration-color;
+}
+.log p span:hover{
+    
+    text-decoration-style: solid;
+    text-decoration-color: blue;
+}
